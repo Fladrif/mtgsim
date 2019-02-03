@@ -56,6 +56,16 @@
     },
     {
       "name": "hold",
+      "costs": [
+        {
+          "color": "BLUE",
+          "amount": 1
+        },
+        {
+          "color": "GREEN",
+          "amount": 1
+        }
+      ],
       "count": 37
     }
   ]

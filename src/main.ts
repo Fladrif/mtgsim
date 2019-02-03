@@ -1,10 +1,4 @@
-import { Deck, Land } from './deck';
-
-export interface GameState {
-  turn: number;
-  life: number;
-  lands: Land[];
-}
+import { Deck } from './deck';
 
 function main(): void {
   const deck = new Deck();

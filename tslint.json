@@ -5,6 +5,7 @@
   "rules": {
     "quotemark": [true, "single", "avoid-escape"],
     "curly": [true, "ignore-same-line"],
+    "array-type": [true, "array"],
     "ordered-imports": false,
     "arrow-parens": false,
     "member-access": false,

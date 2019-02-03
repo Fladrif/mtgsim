@@ -6,7 +6,8 @@
   "scripts": {
     "build": "rm -rf ./lib && tsc -p tsconfig.json",
     "start": "npm run build && node lib/main.js",
-    "test": "jest lib"
+    "pretest": "npm run build",
+    "test": "jest --forceExit"
   },
   "author": "Jonathan Li",
   "license": "ISC",
@@ -29,5 +30,8 @@
     "trailingComma": "all",
     "singleQuote": true,
     "bracketSpacing": true
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }

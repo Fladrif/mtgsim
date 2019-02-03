@@ -3,16 +3,14 @@ import * as lodash from 'lodash';
 export type COLOR = 'GREEN' | 'RED' | 'BLUE' | 'WHITE' | 'BLACK';
 export type LAND_TYPE = 'FOREST' | 'MOUNTAIN' | 'ISLAND' | 'PLAIN' | 'SWAMP';
 
-export interface Card {
+interface CardBase {
   name: string;
   count: number;
 }
 
-export interface Land extends Card {
-  name: string;
+export interface Land extends CardBase {
   type: LAND_TYPE[] | 'LAND';
   colors: COLOR[];
-  count: number;
   condition?: LAND_TYPE[] | number;
 }
 
@@ -21,9 +19,11 @@ export interface Cost {
   amount: number;
 }
 
-export interface Spell extends Card {
-  cost: Cost[];
+export interface Spell extends CardBase {
+  costs: Cost[];
 }
+
+export type Card = Spell | Land;
 
 export interface DeckList {
   cards: Card[];
