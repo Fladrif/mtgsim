@@ -1,0 +1,33 @@
+{
+  "name": "mtgsim",
+  "version": "1.0.0",
+  "description": "sim mtg decks",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "rm -rf ./lib && tsc -p tsconfig.json",
+    "start": "npm run build && node lib/main.js",
+    "test": "jest lib"
+  },
+  "author": "Jonathan Li",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bluebird": "^3.5.20",
+    "@types/lodash": "^4.14.108",
+    "bluebird": "^3.5.1",
+    "lodash": "^4.17.10",
+    "typescript": "^2.8.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/node": "^10.12.9",
+    "jest": "^22.4.3",
+    "prettier": "^1.12.1",
+    "tslint": "^5.10.0"
+  },
+  "prettier": {
+    "printWidth": 110,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "bracketSpacing": true
+  }
+}

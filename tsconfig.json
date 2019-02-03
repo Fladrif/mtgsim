@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib",
+    "module": "commonjs",
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noStrictGenericChecks": true,
+    "downlevelIteration": true,
+    "noEmitOnError": true,
+    "emitDecoratorMetadata": true,
+    "strict": true,
+    "declaration": true,
+    "inlineSourceMap": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": ".",
+    "paths": {
+      "root*": ["src*"]
+    },
+    "typeRoots": ["./node_modules/@types"],
+    "target": "es2017",
+    "lib": ["es2017", "es2017.object", "esnext.asynciterable"]
+  },
+  "include": ["./src/**/*"],
+  "exclude": [],
+  "jest": {
+    "mapCoverage": true
+  }
+}

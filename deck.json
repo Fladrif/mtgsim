@@ -1,0 +1,62 @@
+{
+  "cards": [
+    {
+      "name": "Breeding Pool",
+      "type": ["ISLAND", "FOREST"],
+      "colors": ["BLUE", "GREEN"],
+      "count": 4,
+      "condition": 2
+    },
+    {
+      "name": "Hinterland Harbor",
+      "type": "LAND",
+      "colors": ["BLUE", "GREEN"],
+      "count": 4,
+      "condition": ["ISLAND", "FOREST"]
+    },
+    {
+      "name": "Steam Vents",
+      "type": ["ISLAND", "MOUNTAIN"],
+      "colors": ["BLUE", "RED"],
+      "count": 4,
+      "condition": 2
+    },
+    {
+      "name": "Sulfur Falls",
+      "type": "LAND",
+      "colors": ["BLUE", "RED"],
+      "count": 4,
+      "condition": ["ISLAND", "MOUNTAIN"]
+    },
+    {
+      "name": "Stomping Ground",
+      "type": ["MOUNTAIN", "FOREST"],
+      "colors": ["RED", "GREEN"],
+      "count": 4,
+      "condition": 2
+    },
+    {
+      "name": "Rootbound Crag",
+      "type": "LAND",
+      "colors": ["RED", "GREEN"],
+      "count": 4,
+      "condition": ["MOUNTAIN", "FOREST"]
+    },
+    {
+      "name": "Mountain",
+      "type": "LAND",
+      "colors": ["RED"],
+      "count": 1
+    },
+    {
+      "name": "Island",
+      "type": "LAND",
+      "colors": ["BLUE"],
+      "count": 2
+    },
+    {
+      "name": "hold",
+      "count": 37
+    }
+  ]
+}
