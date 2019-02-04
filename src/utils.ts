@@ -4,14 +4,16 @@ function isLand(card: Card): card is Land {
   return (card as Land).type !== undefined;
 }
 
+function isSpell(card: Card): card is Spell {
+  return (card as Land).type === undefined;
+}
+
 export function getLands(cards: Card[]): Land[] {
-  const lands = [];
+  return cards.filter(isLand);
+}
 
-  for (const card of cards) {
-    if (isLand(card)) lands.push(card);
-  }
-
-  return lands;
+export function getSpells(cards: Card[]): Spell[] {
+  return cards.filter(isSpell);
 }
 
 export function getCMC(spell: Spell): number {
